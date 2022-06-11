@@ -10,6 +10,8 @@ body {
     background-color: #FFFFFF;
     font-size: 14px;
     letter-spacing: 0.03em;
+    margin: 0;
+    width: 1600px;
 }
 
 /* Колір основного тексту #212121 */
@@ -24,6 +26,8 @@ body {
 /* прибрані крапки в списках */
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 /* приховані заголовки */
@@ -31,10 +35,19 @@ body {
     display: none;
 }
 
+.container {
+    width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    outline: 2px solid tomato;
+}
+
 /* header */
-/* .header{
-    background-color: #FFFFFF;
-} */
+.header{
+    
+}
 
 .logo {
     color: var(--primary-text-color);
@@ -95,11 +108,18 @@ body {
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
         border-radius: 4px;
         font-family: inherit;
+
+        display: inline-block;
+        min-width: 200px;
+        height: 50px;
+        padding: 10px 32px;
+        text-align: center;
+        border: 2px transparent;
 }
 .order-service{
         font-weight: 700;
         font-size: 16px;
-        line-height: 1.88;
+        line-height: 1.87;
         display: flex;
         align-items: center;
         text-align: center;
