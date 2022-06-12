@@ -36,17 +36,17 @@ body {
 }
 
 .container {
-    width: 1230px;
+    width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+    /* padding-left: 15px;
+    padding-right: 15px; */
     outline: 2px solid tomato;
 }
 
 /* header */
 .header{
-    
+    border-bottom: 1px solid #ECECEC;
 }
 
 .logo {
@@ -103,6 +103,13 @@ body {
 .order-window{
     background-color: #2F303A;
 }
+
+.hero-content{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    text-align: center;
+}
+
 .order-button{
         background: var(--accent-text-color);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -129,6 +136,9 @@ body {
 }
 
 .title{
+        margin: 0 auto;
+        margin-bottom: 30px;
+        max-width: 696px;
         font-weight: 900;
         font-size: 44px;
         line-height: 1.36;
@@ -139,19 +149,38 @@ body {
 }
 
 /* benefits list */
-/* .benefits{
-    background-color: #E5E5E5;
-} */
+
+.benefits-container{
+    margin: 0 auto;
+}
+
+.benefit-list{
+    display: flex;
+}
+
+.benefit-card{
+    max-width: 270px;
+    margin: 0 15px;
+}
 
 .benefit-title{
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
+    margin-top: 0px;
+    margin-bottom: 10px;
 }
 
 .benefit-description{
         line-height: 1.71;
         color: var(--description-text-color);
+        margin-top: 0;
+        margin-bottom: 0px;
+}
+
+.benefits-container{
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 /* Our work */
@@ -161,22 +190,54 @@ body {
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
+}
+.work-list{
+        display: flex;
+        flex-wrap: wrap;
+}
+
+.work-card{
+    margin: 0 15px;
 }
 
 /* Our team */
+.team {
+    background-color: #F5F4FA;
+}
+
+.team-content{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .team-title{
         font-weight: 700;
         font-size: 36px;
         line-height: 1.17;
         text-align: center;
+        margin-top: 0;
+        margin-bottom: 50px;
 }
 
-.team{
-    background-color: #F5F4FA;
+.team-list{
+        display: flex;
+        flex-wrap: wrap;
 }
 
-/* .team-photo{
+.team-card{
+    background-color: #FFFFFF;
+    max-width: 270px;
+    margin: 0 15px;
+    box-shadow: 0px 2px 1px rgb(0 0 0 / 20%),
+        0px 1px 1px rgb(0 0 0 / 14%),
+        0px 1px 3px rgb(0 0 0 / 12%);
+    border-radius: 4px;
+}
+
+/* .team-image{
+    margin-bottom: 30px;
 } */
 
 .team-name{
@@ -184,19 +245,32 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 30px;
 }
 
-.position{
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.19;
-    text-align: center;
-    color: var(--description-text-color);
-}
+.work-role{
+        font-style: normal;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        color: var(--description-text-color);
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-bottom: 30px;
+    }
 
 /* portfolio main */
 
 /* buttons */
+
+.buttons-list{
+    display: flex;
+    justify-content: center;
+    padding-top: 94px;
+    margin-bottom: 50px;
+}
 
 .product-button{
         background: #F5F4FA;
@@ -208,6 +282,13 @@ body {
         border: none;
         cursor: pointer;
         font-family: inherit;
+        padding: 4px 4px;
+        width: auto;
+        height: auto;
+}
+
+.product-item{
+    padding: 6px 22px;
 }
 
 .product-button:hover,
@@ -224,9 +305,43 @@ body {
 
 /* projects */
 
+.projects-list{
+    padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project-card{
+    max-width: 370px;
+    margin: 15px;
+    border: 1px solid #EEEEEE;
+}
+
+/* .project-card:nth-child(3n + 1){
+    margin-left: 0;
+} */
+
+.project-card:nth-child(-n + 3) {
+    margin-top: 0;
+}
+
+/* .project-card:nth-child(3n + 3){
+    margin-right: 0;
+} */
+
+.project-card:nth-last-child(-n + 3) {
+    margin-bottom: 0;
+}
+
 .project-link{
     text-decoration: none;
     color: var(--primary-text-color);
+
+}
+
+.project-image{
+    margin-bottom: 20px;
+
 }
 
 .project-title{
@@ -234,12 +349,18 @@ body {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
+        margin-top: 0;
+        margin-bottom: 4px;
+        margin-left: 24px;
 }
 
 .project-description{
         font-size: 16px;
         line-height: 1.88;
         color: var(--description-text-color);
+        margin-top: 0;
+        margin-bottom: 20px;
+        margin-left: 24px;
 }
 
 /* footer */
