@@ -10,8 +10,7 @@ body {
     background-color: #FFFFFF;
     font-size: 14px;
     letter-spacing: 0.03em;
-    margin: 0;
-    width: 1600px;
+
 }
 
 /* Колір основного тексту #212121 */
@@ -35,13 +34,30 @@ body {
     display: none;
 }
 
+
+/* прибрані відсупи тексту та заголовків */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p{
+    margin: 0;
+}
+
 .container {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: 15px;
-    padding-right: 15px; */
+    padding-left: 15px;
+    padding-right: 15px;
     /* outline: 2px solid tomato; */
+}
+
+.section{
+        padding-top: 94px;
+        padding-bottom: 94px;
 }
 
 /* header */
@@ -196,10 +212,10 @@ body {
 }
 
 .benefit-title{
+    font-size: 14px;
     font-weight: 700;
     line-height: 1.14;
     text-transform: uppercase;
-    margin-top: 0px;
     margin-bottom: 10px;
 }
 
@@ -227,11 +243,18 @@ body {
 }
 .work-list{
         display: flex;
-        flex-wrap: wrap;
+        margin-left: -15px;
+        margin-right: -15px;
 }
 
 .work-card{
     margin: 0 15px;
+}
+
+.work-image{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 /* Our team */
@@ -239,10 +262,10 @@ body {
     background-color: #F5F4FA;
 }
 
-.team-content{
+/* .team-content{
     padding-top: 94px;
     padding-bottom: 94px;
-}
+} */
 
 .team-title{
         font-weight: 700;
@@ -255,7 +278,6 @@ body {
 
 .team-list{
         display: flex;
-        flex-wrap: wrap;
 }
 
 .team-card{
@@ -277,9 +299,8 @@ body {
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
-    margin-top: 0;
+    margin-top: 30px;
     margin-bottom: 10px;
-    padding-top: 30px;
 }
 
 .work-role{
@@ -288,9 +309,8 @@ body {
         line-height: 1.19;
         text-align: center;
         color: var(--description-text-color);
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-bottom: 30px;
+        margin-bottom: 30px;
+        
     }
 
 /* portfolio main */
@@ -300,7 +320,6 @@ body {
 .buttons-list{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
     margin-bottom: 50px;
 }
 
@@ -314,7 +333,7 @@ body {
         border: none;
         cursor: pointer;
         font-family: inherit;
-        padding: 4px 4px;
+        margin: 4px 4px;
         width: auto;
         height: auto;
 }
@@ -338,15 +357,15 @@ body {
 /* projects */
 
 .projects-list{
-    padding-bottom: 94px;
     display: flex;
     flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .project-card{
     max-width: 370px;
     margin: 15px;
-    border: 1px solid #EEEEEE;
 }
 
 /* .project-card:nth-child(3n + 1){
@@ -372,8 +391,14 @@ body {
 }
 
 .project-image{
-    margin-bottom: 20px;
+    display: block;
+}
 
+.project-text{
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;;
 }
 
 .project-title{
@@ -381,28 +406,22 @@ body {
         font-size: 18px;
         line-height: 2;
         letter-spacing: 0.06em;
-        margin-top: 0;
         margin-bottom: 4px;
-        margin-left: 24px;
 }
 
 .project-description{
         font-size: 16px;
         line-height: 1.88;
         color: var(--description-text-color);
-        margin-top: 0;
-        margin-bottom: 20px;
-        margin-left: 24px;
 }
 
 /* footer */
 .footer{
     background-color: #2F303A;
-}
-
-.footer-list{
     padding: 60px 0;
 }
+
+
 
 .logo-footer{
         color: #ffffff;
