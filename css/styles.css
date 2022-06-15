@@ -226,12 +226,11 @@ p{
         margin-bottom: 0px;
 }
 
-.benefits-container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 /* Our work */
+.our-work-block{
+    padding-top: 0;
+}
 
 .our-work-title{
         font-weight: 700;
@@ -262,10 +261,6 @@ p{
     background-color: #F5F4FA;
 }
 
-/* .team-content{
-    padding-top: 94px;
-    padding-bottom: 94px;
-} */
 
 .team-title{
         font-weight: 700;
@@ -278,6 +273,8 @@ p{
 
 .team-list{
         display: flex;
+        margin-left: -15px;
+        margin-right: -15px;
 }
 
 .team-card{
@@ -290,9 +287,11 @@ p{
     border-radius: 4px;
 }
 
-/* .team-image{
-    margin-bottom: 30px;
-} */
+.team-image{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 .team-name{
     font-weight: 500;
@@ -333,13 +332,13 @@ p{
         border: none;
         cursor: pointer;
         font-family: inherit;
-        margin: 4px 4px;
         width: auto;
         height: auto;
+        padding: 6px 22px;
 }
 
-.product-item{
-    padding: 6px 22px;
+.buttons-list > .product-item + .product-item{
+    margin-left: 8px;
 }
 
 .product-button:hover,
@@ -359,8 +358,8 @@ p{
 .projects-list{
     display: flex;
     flex-wrap: wrap;
-    margin-left: -15px;
-    margin-right: -15px;
+    /* margin-left: -15px;
+    margin-right: -15px; */
     gap: 30px;
     margin: auto;
     
